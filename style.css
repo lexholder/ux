@@ -14,7 +14,7 @@ body {
   background-size: 100% 100%;
   background-color: #464646;
   /*overflow: hidden!important;*/
-  margin: 0 0 10% 0;
+  margin: 0 0 5% 0;
 }
 
 h1 {
@@ -33,38 +33,14 @@ h4 {
   font-family: Montserrat;
 font-style: normal;
 font-weight: 200;
-font-size: 3em;
+font-size: 2em;
 /*line-height: 73px;*/
 letter-spacing: 0.03em;
 text-transform: lowercase;
 color: rgba(0, 0, 0, 0.9);
-/*margin-bottom: 2%;*/
-padding-top: 1%;
-padding-right: 1em;
-padding-left: 1em;
-border: 1px solid transparent;
-}
-
-a {
-text-decoration: none;
-}
-
-h4:hover {
-  /*border: 1px solid #33B4D0;
-  border-radius: 7px;*/
-  background: -webkit-linear-gradient(#33B4D0, rgba(255,153,0));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  bottom: 0;
-  position: fixed;
-  width: 80vw;
-  align-items: center;
+display: flex;
+justify-content: center;
+/*margin-bottom: 5%;*/
 }
 
 .flex {
@@ -85,67 +61,6 @@ h4:hover {
   /*margin-top: 51%;*/
 }
 
-/* Dropup Button */
-/*.dropbtn {
-  background-color: transparent;
-  background:-moz-linear-gradient(top, #BB7A28 0%, #33B4D0 100%);
-        background: -webkit-linear-gradient(top, #BB7A28 0%, #33B4D0 100%);
-        background: linear-gradient(to bottom, #BB7A28 0%, #33B4D0 100%);
-        -webkit-background-clip: text;
-        -moz-background-clip: text;
-        background-clip: text;
-       -webkit-text-fill-color:transparent;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-}
-
-/* The container <div> - needed to position the dropup content */
-/*.dropup {
-  position: relative;
-  display: inline-block;
-  margin-top: -98%;
-  margin-right: 20%;
-}*/
-
-/* Dropup content (Hidden by Default) */
-/*.dropup-content {
-  display: none;
-  position: absolute;
-  border-radius: 7px;
-  bottom: 100%;
-  background-color: rgba(255,153,0,0.8);
-  min-width: 10%;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}*/
-
-/* Links inside the dropup */
-/*.dropup-content a {
-  color: white;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}*/
-
-/* Change color of dropup links on hover */
-/*.dropup-content a:hover {
-  background-color: transparent;
-  color: #33B4D0;
-  border-radius: 7px;
-}*/
-
-/* Show the dropup menu on hover */
-/*.dropup:hover .dropup-content {
-  display: block;
-}*/
-
-/* Change the background color of the dropup button when the dropup content is shown */
-/*.dropup:hover .dropbtn {
-  color: #566d72;
-}*/
-
-
 /*scrolling text animation*/
 
 .scrolls {
@@ -154,8 +69,7 @@ h4:hover {
   width: 100vw;
   margin-top: -5%;
   overflow: hidden;
-  /*background: #1E4F59;*/
-  background: -webkit-linear-gradient(#33B4D0, #000);
+  background: -webkit-linear-gradient(#1E4F59, #33B4D0, #fff);
 }
 
 .Iam {
@@ -166,7 +80,7 @@ h4:hover {
 .Iam p {
   height: 50px;
   float: left;
-  margin-right: 0.3em;
+  margin-right: 0.4em;
 }
 .Iam b {
   float: left;
@@ -177,7 +91,7 @@ h4:hover {
 }
 .Iam .innerIam {
   display: inline-block;
-  color: rgb(51, 180, 208);
+  color: #211C14;
   position: relative;
   white-space: nowrap;
   top: 0;
@@ -255,7 +169,6 @@ h4:hover {
   letter-spacing: 0.03em;
   text-transform: lowercase;
   color: #1E4F59;
-  border: .25px solid #EDECEA;
   text-align: center;
   /*width: 100%;*/
   display: flex;
@@ -267,7 +180,13 @@ h4:hover {
 .wbox {
   display: flex;
   flex-direction: column;
-  border-top: .25px solid #EDECEA;
+  width: 100%;
+  height: 100%;
+}
+
+.wboxr {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   height: 100%;
 }
@@ -276,11 +195,9 @@ h4:hover {
   width: 100%;
   height: 100%;
   background-size: contain;
-  display: flex;
-  flex-direction: column;
-  align-items: right;
+  /*align-items: end;
   margin-right: 0;
-  margin-left: auto;
+  margin-left: auto;*/
 }
 
 .wbox img {
@@ -289,7 +206,9 @@ h4:hover {
   height: 100%;
 }
 
-
+.wbox #headshot {
+  background-color: #F5F5F5;
+}
 
 
 /*dropdown button*/
@@ -300,13 +219,18 @@ h4:hover {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #1E4F59;
+    /*background-color: #1E4F59;*/
+    background: repeating-radial-gradient(
+      circle at 0 0,
+      #211C14,
+      #000 4vw
+    );
+
     box-shadow: 0 4px 4px -3px #232323;
     -moz-box-shadow: 0 4px 4px -3px #232323;
     -webkit-box-shadow: 0 4px 4px -3px #232323;
     overflow: hidden;
     transition: all 0.4s ease-in-out;
-    padding-top: 0px;
 }
 
 .navigation a {
@@ -327,22 +251,16 @@ h4:hover {
 }
 
 
-.logo {
-    text-align: right;
-    width: 5%;
-    margin:0 auto;
-}
-
 .line1, .line2, .line3 {
   margin-top:5px;
-  background-color:#BB7A28;
-  width:25px;
+  background-color: white;
+  width:30px;
   height:3px;
   display:block;
   position:relative;
   opacity:1.0;
-  border-radius:15%;
-  transition: all .3s;
+  border-radius:3%;
+  transition: all 1s;
 }
 
 .line1.active {
@@ -374,9 +292,10 @@ h4:hover {
     display: inline-block;
     position:relative;
     text-align:center;
-    color: #fff;
+    color: white;
+    font-weight: bold;
     opacity:0.0;
-    transition: all .25s ease-in-out;
+    transition: all .5s ease-in-out;
 }
 
 .menuitems:after {
@@ -384,7 +303,7 @@ h4:hover {
   display:block;
   width: 0;
   height: 1px;
-  background: #fff;
+  background: #33B4D0;
   transition: width .2s;
 }
 
@@ -413,4 +332,57 @@ h4:hover {
     margin:0!important;
     padding: 16px;
     font-size:30px;
+}
+
+/*bouncing & blinking text*/
+
+#blinking {
+  animation:blinkingText 0.8s infinite;
+}
+
+.fast {
+ height: 1%;
+ /*overflow: hidden;*/
+ position: relative;
+ background: transparent;
+ color: transparent;
+}
+.fast h4 {
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ margin: 0;
+ line-height: 1%;
+ text-align: center;
+ /* Starting position */
+ -moz-transform:translateY(50%);
+ -webkit-transform:translateY(50%);
+ transform:translateY(50%);
+ /* Apply animation to this element */
+ -moz-animation: fast .75s linear infinite alternate;
+ -webkit-animation: fast .75s linear infinite alternate;
+ animation: fast .75s linear infinite alternate;
+}
+/* Move it (define the animation) */
+@-moz-keyframes fast {
+ 0%   { -moz-transform: translateY(50%); color: #BB7A28; }
+ 100% { -moz-transform: translateY(-50%); color: #CCCCCC; }
+}
+@-webkit-keyframes fast {
+ 0%   { -webkit-transform: translateY(50%); color: #BB7A28; }
+ 100% { -webkit-transform: translateY(-50%); color: #CCCCCC;}
+}
+@keyframes fast {
+ 0%   {
+  color: #BB7A28;
+ -moz-transform: translateY(50%); /* Browser bug fix */
+ -webkit-transform: translateY(50%); /* Browser bug fix */
+ transform: translateY(50%);
+ }
+ 100% {
+  color: #CCCCCC;
+ -moz-transform: translateY(-50%); /* Browser bug fix */
+ -webkit-transform: translateY(-50%); /* Browser bug fix */
+ transform: translateY(-50%);
+ }
 }
