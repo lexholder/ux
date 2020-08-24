@@ -1,6 +1,10 @@
 body {
   margin: 0;
   transition: background-color .5s;
+  font-family: Montserrat;
+  font-weight: 100;
+  /*background-color: #2b2b2b;*/
+  color: #303030;
 }
 
 
@@ -27,6 +31,139 @@ letter-spacing: 0.03em;
 color: #33B4D0;
 margin-top: unset;
 text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+h2 {
+  /*background: conical-gradient(to top, white, #33B4D0);*/
+    background: repeating-radial-gradient(
+      circle at 0 0,
+      #f4f4f4,
+      #fff .5vw
+    );
+  /*border-bottom: 1px solid linear-gradient(to bottom, white, #ff8c00);*/
+  border-radius: 25px 0 25px 0;
+  padding: 1.5%;
+  letter-spacing: 0.03em;
+  color: rgba(0,0,0,0.9);
+  /*margin: auto;*/
+  text-align: left;
+  margin-top: 3%;
+  font-size: 3em;
+  font-weight: 100;
+}
+
+h3 {
+  width: 90%;
+  margin: auto;
+  font-weight: 100;
+  font-size: 1.25em;
+  text-align: left;
+}
+
+.easy {
+width: 100vw;
+margin-top: 2%;
+display: flex;
+justify-content: center;
+flex-direction: row;
+}
+
+.easy h1 {
+    font-family: Montserrat;
+font-style: normal;
+font-weight: 200;
+font-size: 2em;
+/*line-height: 73px;*/
+letter-spacing: 0.03em;
+/*text-transform: lowercase;*/
+text-align: left;
+display: flex;
+color: rgba(0, 0, 0, 0.9);
+margin-top: 3%;
+padding-bottom: 1%;
+border-bottom: .5px solid rgba(0,0,0,0.9);
+}
+
+.z a {
+text-decoration: none;
+}
+
+footer {
+ display: flex;
+ color: white;
+ /*flex-direction: column;*/
+ /*align-items: center;*/
+ /*justify-content: center;*/
+/*vertical-align: center;*/
+  background-position: cover;
+  background: repeating-radial-gradient(
+      circle at 0 0,
+     #211C14,
+      #000 .5vw
+    );
+  height: 10vh;
+  /*margin-top: 2vh;*/
+}
+
+footer a {
+  color: white!important;
+}
+
+.text {
+  display: flex;
+  width: 33.3%;
+  padding-left: 2vw;
+  /*flex-direction: row;*/
+  /*justify-content: space-between;*/
+}
+.jumper {
+display: flex;
+/*height: 100%;*/
+justify-content: center;
+align-items: center;
+text-decoration: none;
+padding: 1%;
+color: rgba(0,0,0,0.9);
+width: 33.3%;
+margin: auto;
+/*margin-top: 2%;*/
+margin-bottom: 1%;
+border-radius: 25px;
+border-bottom: 1px solid #BB7A28;
+border-top: .25px solid #5AC2D8;
+}
+
+.jumper:hover {
+border-bottom: .25px solid rgba(0,0,0,0.1);
+border-top: .25px solid rgba(0,0,0,0.1);
+color: #1E4F59;
+}
+
+.jumper:active {
+  background: #33B4D0;
+}
+
+.mid-div {
+  width: 33.3%;
+  display: flex;
+  justify-content: center;
+}
+
+.empty-div {
+width: 33.3%;
+padding-right: 2vw;
+}
+
+.casewrap {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+}
+p {
+  width: 65%;
+  color: rgba(0,0,0,0.9);
+  font-weight: 100;
+  font-size: 1em;
 }
 
 h4 {
@@ -65,8 +202,9 @@ justify-content: center;
 
 .scrolls {
   display: flex;
-  justify-content: space-evenly;
-  width: 100vw;
+  justify-content: flex-end;
+  padding-left: 15vw;
+  margin-right: auto;
   margin-top: -5%;
   overflow: hidden;
   background: -webkit-linear-gradient(#1E4F59, #33B4D0, #fff);
@@ -79,6 +217,8 @@ justify-content: center;
 }
 .Iam p {
   height: 50px;
+  width: 100%;
+  color: white;
   float: left;
   margin-right: 0.4em;
 }
@@ -170,11 +310,14 @@ justify-content: center;
   text-transform: lowercase;
   color: #1E4F59;
   text-align: center;
-  /*width: 100%;*/
   display: flex;
   justify-content: center;
   margin-bottom: unset;
   text-shadow: none;
+  background: linear-gradient(to bottom, white, #f8f8f8);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05);
+  border-radius: 0 0 250px 250px;
+  padding: 1%;
 }
 
 .wbox {
@@ -211,6 +354,22 @@ justify-content: center;
 }
 
 
+/*.box {
+  width: 100vw;
+  height: 20vh;
+}
+.footer img {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 50%;
+  height: 50%;
+  background-color: transparent;
+  color: white;
+  text-align: center;
+}*/
+
+
 /*dropdown button*/
 
 .navigation {
@@ -230,15 +389,16 @@ justify-content: center;
     -moz-box-shadow: 0 4px 4px -3px #232323;
     -webkit-box-shadow: 0 4px 4px -3px #232323;
     overflow: hidden;
+    height: 45%;
     transition: all 0.4s ease-in-out;
 }
 
 .navigation a {
-    text-decoration: none;
+    text-decoration: none!important;
 }
 
 .navigation ul {
-    margin-top:30px;
+    margin-top:2%;
     text-align:center;
     list-style:none;
     margin-left:auto;
@@ -284,11 +444,11 @@ justify-content: center;
 .menuitems {
     padding-top:.5%;
     padding-bottom:1%;
-    text-decoration: none;
+    text-decoration: none!important;
     list-style:none;
     font-family: "Montserrat";
     /*font-weight: 300;*/
-    font-size: 24px;
+    font-size: 1.2em;
     display: inline-block;
     position:relative;
     text-align:center;

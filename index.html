@@ -9,6 +9,7 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css2?family=Monofett&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.typekit.net/phi4xco.css">
   <link href="style.css" rel="stylesheet">
   <script src="https://kit.fontawesome.com/cba4ce51d7.js" crossorigin="anonymous"></script>
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
@@ -16,13 +17,14 @@
 </head>
 
 <body>
+  <div id="top-of-page"></div>
 <div id="topNav" class="navigation">
   <span id="closebtn" onclick="navToggle()">
       <span class="line1"></span>
       <span class="line2"></span>
       <span class="line3"></span>
+<h5 style="text-align: center; color: white; font-family: omnes-pro; font-weight: 800;">UI/UX DESIGNER</h5>
   </span>
-
 <ul class="menulist">
   <li><a class="menuitems" target="_blank" href="images/Alex Holder Resume copy.pdf">Resume</a></li>
   <li><a class="menuitems" href="mailto:lexholder@gmail.com">Email</a></li>
@@ -37,7 +39,7 @@
   <div class="wrapper">
   <h1><span style="text-transform: lowercase;">Alex</span><br>Holder</h1>
 <div class="fast">
-  <span id="blinking"><h4>See My UX Work</h4></span>
+  <span id="blinking"><h4>See My Work</h4></span>
 </div>
   </div>
   <div class="scrolls">
@@ -69,39 +71,67 @@
     </div>
   </div>
   <br><br>
-  <h1 class="wheader">Case Studies</h1>
+  <h1 class="wheader">
+  Case Studies</h1>
   <br><br>
-    <div class="wcontainer">
-      <div class="wbox">
-        <a target="_blank"  href="https://ez-probate.com/"><img src="./images/ezzigzag.png" alt="EZ-Probate website on a macbook"></a>
+    <div class="z">
+      <div class="wcontainer">
+        <div class="wbox">
+          <a target="_blank"  href="https://ez-probate.com/"><img src="./images/ezzigzag.png" alt="EZ-Probate website on a macbook"></a>
+        </div>
+        <div class="wbox">
+        <h2>EZ-Probate</h2>
+        <br>
+        <h3>Redesign of a financial services startup's customer onboarding process</h3>
+        <br><br><br><br><br><br><br>
+        <a class="jumper" href="ezcase.html">read how</a>
+        </div>
       </div>
-      <div class="wbox">
+      <div class="wcontainer">
+        <div class="wbox">
+        <h2>Blink</h2>
+        <br>
+        <h3>Eye health app for screen-staring professionals <br>(yes, that means you!)</h3>
+        <br><br><br><br><br><br><br>
+        <a class="jumper" href="blinkcase.html">read how</a>
+        </div>
+        <div class="wboxr">
+          <a target="_blank"  href="https://the-blink-app.herokuapp.com/"><img src="./images/blinkzigzag.png" alt="Blink website on an iphone"></a>
+        </div>
+      </div>
+      <div class="wcontainer">
+        <div class="wbox">
+          <a target="_blank"  href="http://bijou-for-you.herokuapp.com/"><img src="./images/bijouzigzag.png" alt="Bijou For You website on a macbook"></a>
+        </div>
+        <div class="wbox">
+        <h2>Bijou For You</h2>
+        <br>
+        <h3>Jewelry rental platform based around the sharing economy</h3>
+        <br><br><br><br><br><br><br>
+        <a class="jumper" href="blinkcase.html">read how</a>
 
+        </div>
       </div>
     </div>
     <div class="wcontainer">
       <div class="wbox">
+        <img src="./images/laptop.jpg" alt="mac with stickers">
       </div>
       <div class="wboxr">
-        <a target="_blank"  href="https://the-blink-app.herokuapp.com/"><img src="./images/blinkzigzag.png" alt="Blink website on an iphone"></a>
+<iframe style="background-position: contain"; width="650" height="449.859" src="https://www.youtube.com/embed/ANd6rw5EGlA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <!-- <a target="_blank" href="https://www.linkedin.com/in/lexholder/"><img src="./images/headshotzigzag.png" alt="headshot"></a> -->
       </div>
     </div>
-    <div class="wcontainer">
-      <div class="wbox">
-        <a target="_blank"  href="http://bijou-for-you.herokuapp.com/"><img src="./images/bijouzigzag.png" alt="Bijou For You website on a macbook"></a>
-      </div>
-      <div class="wbox">
-
-      </div>
+  <footer>
+    <div class="text">
+      <h5>©️2020 Alex Holder's Duck Tape Code</h5>
     </div>
-    <div class="wcontainer">
-      <div class="wbox">
-
-      </div>
-      <div class="wboxr">
-        <a target="_blank" href="https://www.linkedin.com/in/lexholder/"><img src="./images/headshotzigzag.png" alt="headshot"></a>
-      </div>
-    </div>
+    <div class="mid-div">
+      <a class="jumper" style="margin-top: 0; margin-bottom: 0; margin: 0;"
+    href="#top-of-page">Back to Top</a>
+  </div>
+    <div class="empty-div"></div>
+  </footer>
     <script>var nav = document.getElementById("topNav");
 var main = document.getElementById("main");
 var menu = document.getElementsByClassName("menuitems");
@@ -121,7 +151,7 @@ close.addEventListener("click", function(){
 
 function navToggle() {
   //to close
-  if (nav.style.height <= "275px") {
+  if (nav.style.height <= "45vh") {
   nav.style.height = "50px";
   main.style.marginTop = "50px";
 
@@ -135,8 +165,8 @@ function navToggle() {
   }
   //to open
   else if (nav.style.height <= "50px") {
-  nav.style.height = "275px";
-  main.style.marginTop = "275px";
+  nav.style.height = "45vh";
+  main.style.marginTop = "45vh";
       var i = 0;
       for (i = 0; i < menu.length; i++){
   menu[i].style.opacity="1.0";
