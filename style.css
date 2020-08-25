@@ -34,22 +34,21 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 h2 {
-  /*background: conical-gradient(to top, white, #33B4D0);*/
     background: repeating-radial-gradient(
       circle at 0 0,
       #f4f4f4,
       #fff .5vw
     );
-  /*border-bottom: 1px solid linear-gradient(to bottom, white, #ff8c00);*/
   border-radius: 25px 0 25px 0;
   padding: 1.5%;
   letter-spacing: 0.03em;
   color: rgba(0,0,0,0.9);
   /*margin: auto;*/
-  text-align: left;
   margin-top: 3%;
-  font-size: 3em;
+  font-size: 2em;
   font-weight: 100;
+  text-align: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 h3 {
@@ -69,32 +68,52 @@ flex-direction: row;
 }
 
 .easy h1 {
-    font-family: Montserrat;
-font-style: normal;
-font-weight: 200;
-font-size: 2em;
-/*line-height: 73px;*/
-letter-spacing: 0.03em;
-/*text-transform: lowercase;*/
-text-align: left;
-display: flex;
-color: rgba(0, 0, 0, 0.9);
-margin-top: 3%;
-padding-bottom: 1%;
-border-bottom: .5px solid rgba(0,0,0,0.9);
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 2em;
+  /*line-height: 73px;*/
+  letter-spacing: 0.03em;
+  /*text-transform: lowercase;*/
+  text-align: left;
+  display: flex;
+  color: rgba(0, 0, 0, 0.9);
+  margin-top: 3%;
+  padding-bottom: 1%;
+  border-bottom: .5px solid rgba(0,0,0,0.9);
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
 .z a {
 text-decoration: none;
 }
 
+footer .jumper {
+  height: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .jumper:hover {
+  border-bottom: .25px solid #fff;
+  border-top: .25px solid #fff;
+}
+
 footer {
  display: flex;
  color: white;
  /*flex-direction: column;*/
- /*align-items: center;*/
- /*justify-content: center;*/
-/*vertical-align: center;*/
+ align-items: center;
+ justify-content: center;
+vertical-align: center;
   background-position: cover;
   background: repeating-radial-gradient(
       circle at 0 0,
@@ -107,6 +126,11 @@ footer {
 
 footer a {
   color: white!important;
+}
+
+.empty-div {
+color: white;
+text-align: right;
 }
 
 .text {
@@ -155,10 +179,27 @@ padding-right: 2vw;
 }
 
 .casewrap {
+  /*display: flex;*/
+  /*justify-content: space-around;*/
+  /*width: 100%;*/
+  column-count: 2;
+  line-height: 1.5em;
+  column-gap: 1vw;
+  padding-right: -5vw;
+  letter-spacing: .03em;
+  /*padding-left: 5vw;*/
+  margin-left: 10vw;
+  column-width: 100%;
+}
+
+.casewrapb {
   display: flex;
   justify-content: center;
-  width: 100vw;
+  width: 100%;
+  letter-spacing: .03em;
+
 }
+
 p {
   width: 65%;
   color: rgba(0,0,0,0.9);
@@ -349,25 +390,8 @@ justify-content: center;
   height: 100%;
 }
 
-.wbox #headshot {
-  background-color: #F5F5F5;
-}
 
 
-/*.box {
-  width: 100vw;
-  height: 20vh;
-}
-.footer img {
-  position: relative;
-  left: 0;
-  bottom: 0;
-  width: 50%;
-  height: 50%;
-  background-color: transparent;
-  color: white;
-  text-align: center;
-}*/
 
 
 /*dropdown button*/
