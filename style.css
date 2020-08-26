@@ -35,7 +35,7 @@ font-weight: normal;
 font-size: 15em;
 line-height: .7em;
 letter-spacing: 0.03em;
-color: #1E4F59;
+color: #31312F;
 margin-top: unset;
 /*text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15);*/
 }
@@ -126,7 +126,7 @@ footer {
       #000 .5vw
     );
   height: 20vh;
-  margin-top: 5vh;
+  margin-top: 13vh;
 }
 
 
@@ -347,7 +347,7 @@ justify-content: center;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-bottom: 5%;
+  margin-bottom: 10vh;
 }
 
 .wheader {
