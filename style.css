@@ -126,8 +126,8 @@ footer {
      #211C14,
       #000 .5vw
     );
-  height: 10vh;
-  /*margin-top: 2vh;*/
+  height: 20vh;
+  margin-top: 5vh;
 }
 
 
@@ -246,9 +246,10 @@ justify-content: center;
 /*scrolling text animation*/
 
 .scrolls {
+  text-align: center;
   display: flex;
   justify-content: flex-end;
-  padding-left: 15vw;
+  padding-left: 7vw;
   margin-right: auto;
   margin-top: -5%;
   overflow: hidden;
@@ -256,9 +257,10 @@ justify-content: center;
 }
 
 .Iam {
-  padding: 2em 3em;
+  padding: 2em 4em;
   font: normal 40px/50px Montserrat, sans-serif;
   color: #303030;
+  text-align: center;
 }
 .Iam p {
   height: 50px;
@@ -266,6 +268,7 @@ justify-content: center;
   color: #33B4D0;
   float: left;
   margin-right: 0.4em;
+  text-align: center;
 }
 .Iam b {
   float: left;
@@ -273,8 +276,10 @@ justify-content: center;
   position: relative;
   height: 50px;
   top: 40px;
+  text-align: center;
 }
 .Iam .innerIam {
+  text-align: center;
   display: inline-block;
   color: #211C14;
   position: relative;
@@ -343,7 +348,7 @@ justify-content: center;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-bottom: 10%;
+  margin-bottom: 5%;
 }
 
 .wheader {
