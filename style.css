@@ -8,11 +8,24 @@ body {
 }
 
 .left {
+  /*display: flex;*/
+  /*margin-left: 10%;*/
+  padding-left: 10%;
+  /*align-items: left;*/
+
+}
+
+.right {
   display: flex;
-  justify-content: left;
-  margin-left: 0;
-  padding-left: 1%;
-  align-items: left;
+  justify-content: right;
+  /*height: 80%;*/
+  /*margin-right: 0;*/
+  /*padding-right: 1%;*/
+  text-align: right;
+}
+
+.rightbox {
+margin-left: 20%;
 }
 
 .wrapper {
@@ -50,16 +63,18 @@ h2 {
   margin-top: 3%;
   font-size: 2em;
   font-weight: 100;
-  text-align: center;
+  /*text-align: center;*/
   /*box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);*/
 }
 
 h3 {
-  width: 90%;
-  margin: auto;
+  width: 70%;
+  display: flex;
+  justify-content: left;
+  /*margin: auto;*/
   font-weight: 100;
   font-size: 1.25em;
-  text-align: center;
+  /*text-align: center;*/
 }
 
 .easy {
@@ -151,8 +166,7 @@ text-decoration: none;
 padding: 1%;
 color: rgba(0,0,0,0.9);
 width: 33.3%;
-margin: auto;
-/*margin-top: 2%;*/
+height: 2vh;
 margin-bottom: 1%;
 border-radius: 5px;
 border: .25px solid rgba(0,0,0,0.1);
@@ -347,7 +361,9 @@ justify-content: center;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-bottom: 10vh;
+  margin-bottom: 2vh;
+  margin-left: 10vw;
+  margin-right: 10vw;
 }
 
 .wcontainerb {
@@ -383,26 +399,11 @@ justify-content: center;
   height: 100%;
 }
 
-.wboxr {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 100%;
-}
-
-.wboxr img {
-  width: 100%;
-  height: 100%;
-  background-size: contain;
-  /*align-items: end;
-  margin-right: 0;
-  margin-left: auto;*/
-}
-
 .wbox img {
-  background-size: contain;
-  width: 100%;
-  height: 100%;
+  /*background-size: cover;*/
+  width: 40vw;
+
+  height: 40vh;
 }
 
 .wboxb {
@@ -410,7 +411,7 @@ width: 100%;
 height: 100%;
 display: flex;
 flex-direction: column;
-/*align-items: left;*/
+/*align-items: left;
 }
 
 .wboxrb {
@@ -418,6 +419,9 @@ width: 100%;
 height: 100%;
 display: flex;
 flex-direction: column;
+right: 0;
+margin-right: 0;
+justify-content: space-between;
 /*align-items: right;*/
 
 }
