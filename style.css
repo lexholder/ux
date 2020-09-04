@@ -10,7 +10,7 @@ body {
 .left {
   /*display: flex;*/
   /*margin-left: 10%;*/
-  padding-left: 10%;
+  margin-left: 15%;
   /*align-items: left;*/
 
 }
@@ -38,18 +38,25 @@ margin-left: 20%;
   background-size: 100% 100%;
   background-color: #fff;
   /*overflow: hidden!important;*/
-  margin: 0 0 5% 0;
+  margin:0;
+  display: flex;
+  flex-direction: column;
 }
 
 h1 {
 font-family: Monofett;
 font-style: normal;
 font-weight: normal;
-font-size: 15em;
+font-size: 12em;
 line-height: .7em;
-letter-spacing: 0.03em;
+/*letter-spacing: 0.03em;*/
 color: #31312F;
-margin-top: unset;
+/*margin-top: unset;*/
+/*margin-right: auto;*/
+/*margin-left: auto;*/
+/*display: flex;*/
+/*justify-content: center;*/
+text-align: center;
 /*text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15);*/
 }
 
@@ -102,11 +109,12 @@ flex-direction: row;
 }
 
 .center {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
+
+}
+
+.role {
+  margin-top: 0;
+  padding-top: 0;
 }
 
 .z a {
@@ -397,6 +405,7 @@ justify-content: center;
   flex-direction: column;
   width: 100%;
   height: 100%;
+  margin-bottom: 5%;
 }
 
 .wbox img {
@@ -461,6 +470,7 @@ justify-content: space-between;
 
 .menulist {
     text-align: center;
+    font-family: omnes-pro;
 }
 
 
@@ -499,8 +509,6 @@ justify-content: space-between;
     padding-bottom:1%;
     text-decoration: none!important;
     list-style:none;
-    font-family: "Montserrat";
-    /*font-weight: 300;*/
     font-size: 1.2em;
     display: inline-block;
     position:relative;
@@ -530,7 +538,7 @@ justify-content: space-between;
     position: absolute;
     text-decoration:none;
     top: 10px;
-    left: 25px;
+    right: 25px;
     font-size: 36px !important;
     margin-right: 50px;
     z-index:100;
@@ -550,7 +558,7 @@ justify-content: space-between;
 /*bouncing & blinking text*/
 
 #blinking {
-  animation:blinkingText 0.8s infinite;
+  animation:blinkingText 1s infinite;
 }
 
 .fast {
@@ -559,12 +567,13 @@ justify-content: space-between;
  position: relative;
  background: transparent;
  color: transparent;
+ text-align: center;
 }
 .fast h4 {
  position: absolute;
  width: 100%;
  height: 100%;
- margin: 0;
+ margin-top: 5%;
  line-height: 1%;
  text-align: center;
  /* Starting position */
