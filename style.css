@@ -1,9 +1,9 @@
 body {
   margin: 0;
-  transition: background-color .5s;
+  /*transition: background-color .5s;*/
   font-family: Montserrat;
   font-weight: 100;
-  /*background-color: #2b2b2b;*/
+  background-color: white!important;
   color: #303030;
 }
 
@@ -549,7 +549,7 @@ justify-content: space-between;
   display:block;
   width: 0;
   height: 1px;
-  background: #33B4D0;
+  background: white;
   transition: width .2s;
 }
 
