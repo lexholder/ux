@@ -138,7 +138,7 @@ footer .jumper:hover {
 footer {
  display: flex;
  color: white;
- /*flex-direction: column;*/
+ width: 100vw;
  align-items: center;
  justify-content: center;
   vertical-align: center;
@@ -171,14 +171,56 @@ display: flex;
 justify-content: center;
 align-items: center;
 text-decoration: none;
-padding: 1%;
+padding: 2%;
 color: rgba(0,0,0,0.9);
-width: 33.3%;
-height: 2vh;
+width: 10vw;
+height: 3vh;
 margin-bottom: 1%;
 border-radius: 5px;
 border: .25px solid rgba(0,0,0,0.1);
 }
+
+.home {
+  display: flex;
+  /*height: 100%;*/
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  padding: 1%;
+  color: rgba(0,0,0,0.9);
+  width: 10vw;
+  height: 2vh;
+  margin-bottom: 1%;
+  border-radius: 5px;
+  border: .25px solid rgba(0,0,0,0.1);
+}
+
+
+.top {
+  display: flex;
+  /*height: 100%;*/
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  padding: 2%;
+  color: white;
+  width: 12vw;
+  height: 2vh;
+  margin-bottom: 1%;
+  border-radius: 5px;
+  background-color: rgba(0,0,0,0.1);
+  border: .25px solid white;
+}
+
+.home:hover, .top:hover {
+  border: .25px solid #5AC2D8;
+}
+
+.home:active, .top:active {
+  background: #f4f4f4;
+  color: black;
+}
+
 
 .jumper:hover {
 border: .25px solid #5AC2D8;
@@ -418,9 +460,7 @@ justify-content: center;
 }
 
 .wbox img {
-  /*background-size: cover;*/
   width: 40vw;
-
   height: 40vh;
 }
 
@@ -633,3 +673,163 @@ justify-content: space-between;
  transform: translateY(-50%);
  }
 }
+
+.tube {
+   width: 560px;
+   height: 315px;
+}
+
+.header {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+#headshot {
+  width: 10.5vw;
+  margin-right: -2.5%;
+}
+
+.sub {
+  font-size: 5em!important;
+  margin-top: -10%;
+  text-align: center;
+  font-family: Monofett;
+  color: #31312F;
+  font-family: omnes-pro;
+  font-size: .75em;
+}
+
+@media all and (max-width: 991px) {
+  body {
+    width: 100vw;
+  }
+
+  .scrolls {
+    display: none;
+  }
+
+  h3 {
+    width: 100%;
+  }
+
+  .header {
+    display: flex;
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .sub {
+    margin-top: -10%;
+    font-size: 4em!important;
+  }
+
+
+  #bijouHead {
+    width: 47vw;
+  }
+
+}
+
+
+@media all and (max-width: 768px) {
+
+  body {
+    font-size: .9em;
+  }
+
+ .scrolls {
+    display: none;
+  }
+
+  .header {
+    display: flex;
+    width: 110%!important;
+    align-items: center;
+    justify-content: center;
+  }
+
+   #bijouHead {
+    width: 55vw;
+  }
+
+  .fast {
+    margin-top: 10%;
+  }
+
+  #headshot {
+    width: 15vw;
+    margin-right: -4%;
+  }
+
+  .sub {
+    margin-top: -15%;
+    font-size: 3em!important;
+  }
+
+  .top, .jumper {
+    font-size: .9em;
+    padding: 3%;
+  }
+
+  .home {
+    font-size: .9em;
+  }
+
+  footer {
+    font-size: .85em;
+  }
+
+.menuitems {
+  line-height: 1.75em;
+}
+
+.wbox img {
+  height: 30vh;
+  width: 40vw;
+}
+
+.tube {
+  /*width: 50%;*/
+  height: auto;
+}
+
+.interviewText {
+  display: none;
+}
+
+.wbox {
+font-size: .8em;
+}
+
+}
+
+
+@media all and (max-width: 480px) {
+
+h1 {
+  font-size: 8em;
+}
+
+iframe {
+  display: none;
+}
+
+.wheader {
+  margin-top: -20%;
+}
+
+#topLeft {
+  margin-top: 5%;
+}
+
+}
+
+
+
+
+
+
+
