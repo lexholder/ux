@@ -467,6 +467,15 @@ h4 {
   margin-right: 10vw;
 }
 
+.wcontainerup {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 2vh;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+
 .wcontainerb {
   display: flex;
   flex-direction: row;
@@ -954,28 +963,49 @@ justify-content: space-between;
   }
 }
 
-@media all and (max-width: 380px) {
+@media all and (max-width: 375px) {
+  /* .z {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+  } */
+
+  .fast, .blinking {
+    display: none;
+  }
   body {
-    font-size: 0.7em;
+    font-size: 0.8em;
+    box-sizing: border-box;
   }
 
   h1 {
-    font-size: 8em;
+    font-size: 6em;
+    /* width: 100vw; */
   }
 
-
-  .blinking,
-  .fast {
-    display: none;
+  h2 {
+    font-size: 1.5em;
   }
+
+  #headshot {
+    width: 30vw;
+    height: auto;
+    border-radius: 72%;
+  }
+
+  #close-button {
+    margin-right: 0;
+    right: 0;
+  }
+
   .sub {
     margin-top: 10%;
-    font-size: 4.5em !important;
+    font-size: 4em !important;
   }
 
   .menuitems {
     font-size: 1.6em;
-    line-height: .75em;
+    line-height: 0.75em;
     text-align: center;
   }
 
@@ -983,28 +1013,97 @@ justify-content: space-between;
     display: none;
   }
 
-  #headshot {
-    width: 18vw;
-    margin-right: -4%; 
-  }
-
   #closebtn {
     right: -25px;
   }
 
   .wbox img {
-  display: none;
+    /* display: none; */
+    width: 80vw;
+    height: 100%;
   }
 
   .wcontainer {
     display: flex;
-    width: 100vw;
-    text-align: left;
-    justify-content: left;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 2.5em;
+  }
+
+  .wcontainerup {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    margin-bottom: 2vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    font-size: 2.5em;
   }
 
   .footer {
-    width: 100vw;
+    /* width: 100vw; */
+    font-size: 5em;
   }
 
+  /* .wheader {
+    margin-top: -40%;
+  } */
+
+  #topLeft {
+    margin-top: 5%;
+  }
+
+  .text {
+    margin-left: 0;
+  }
+
+  .header {
+    display: flex;
+    width: 100% !important;
+    font-size: 0.8em;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .headerblink {
+    display: flex;
+    width: 100%;
+    font-size: 0.8em;
+    text-align: center;
+  }
+
+  .easy .mid-div {
+    display: none;
+  }
+
+  .easy .header {
+    width: 100% !important;
+  }
+
+  .top {
+    font-size: 1em;
+    padding: 3%;
+    width: 80%;
+  }
+
+  .jumper {
+    font-size: 1.25em;
+    padding: 3%;
+    width: 75%;
+  }
+
+  #bijouHead {
+    display: flex;
+    width: 100% !important;
+    font-size: 1.8em;
+    text-align: center;
+    margin-left: -14%;
+    justify-content: center;
+  }
+
+  .text,
+  .empty-div {
+    width: 55%;
+  }
 }
