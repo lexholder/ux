@@ -5,6 +5,7 @@ body {
   font-weight: 100;
   background-color: white !important;
   color: #303030;
+  overflow-x: hidden;
 }
 
 .left {
@@ -964,6 +965,11 @@ justify-content: space-between;
 }
 
 @media all and (max-width: 375px) {
+
+  .navigation {
+    width: 375px;
+  }
+
   /* .z {
     display: flex;
     flex-direction: column;
@@ -993,9 +999,8 @@ justify-content: space-between;
     border-radius: 72%;
   }
 
-  #close-button {
-    margin-right: 0;
-    right: 0;
+  .scrolls, .iam, .innerIam {
+    display: none;
   }
 
   .sub {
@@ -1014,13 +1019,17 @@ justify-content: space-between;
   }
 
   #closebtn {
-    right: -25px;
+    /* right: -25px; */
   }
 
   .wbox img {
     /* display: none; */
     width: 80vw;
     height: 100%;
+  }
+
+  .wbox {
+    font-size: .5em;
   }
 
   .wcontainer {
@@ -1064,13 +1073,15 @@ justify-content: space-between;
     align-items: center;
     justify-content: center;
     text-align: center;
+    line-height: inherit;
   }
 
   .headerblink {
     display: flex;
-    width: 100%;
+    width: 243%;
     font-size: 0.8em;
     text-align: center;
+    line-height: inherit;
   }
 
   .easy .mid-div {
@@ -1078,13 +1089,15 @@ justify-content: space-between;
   }
 
   .easy .header {
-    width: 100% !important;
+    width: 93% !important;
+  }
+
+  .empty-div h5 {
+    display: none;
   }
 
   .top {
-    font-size: 1em;
-    padding: 3%;
-    width: 80%;
+    display: none;
   }
 
   .jumper {
@@ -1095,11 +1108,28 @@ justify-content: space-between;
 
   #bijouHead {
     display: flex;
-    width: 100% !important;
+    width: 180% !important;
     font-size: 1.8em;
     text-align: center;
     margin-left: -14%;
     justify-content: center;
+   line-height: inherit;
+  }
+
+  #ezhead {
+    line-height: inherit;
+    margin-left: 25%;
+  }
+
+  #blinkhead {
+    line-height: inherit;
+    margin-left: 8%;
+  }
+
+  .home {
+    font-size: 1em;
+    padding: 2%;
+    margin-right: 5%!important;
   }
 
   .text,
