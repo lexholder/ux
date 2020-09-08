@@ -997,6 +997,10 @@ justify-content: space-between;
     width: 30vw;
     height: auto;
     border-radius: 72%;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
   }
 
   .scrolls, .iam, .innerIam {
@@ -1005,13 +1009,18 @@ justify-content: space-between;
 
   .sub {
     margin-top: 10%;
-    font-size: 4em !important;
+    font-size: 3em !important;
+  }
+
+  #resume {
+    margin-top: 3%!important;
   }
 
   .menuitems {
+    display: flex;
+    justify-content: left;
     font-size: 1.6em;
-    line-height: 0.75em;
-    text-align: center;
+    line-height: 2em!important;
   }
 
   #topLeft {
@@ -1108,10 +1117,11 @@ justify-content: space-between;
 
   #bijouHead {
     display: flex;
-    width: 180% !important;
+    width: 85% !important;
     font-size: 1.8em;
     text-align: center;
-    margin-left: -14%;
+    margin-left: auto;
+    margin-right: auto;
     justify-content: center;
    line-height: inherit;
   }
@@ -1123,7 +1133,8 @@ justify-content: space-between;
 
   #blinkhead {
     line-height: inherit;
-    margin-left: 8%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .home {
