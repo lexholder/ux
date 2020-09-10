@@ -782,6 +782,30 @@ justify-content: space-between;
   font-size: 0.75em;
 }
 
+@media screen 
+  and (min-device-width: 1400px) 
+  and (max-device-width: 1600px) {
+    #topLeft {
+      display: none;
+    }
+
+    .sub {
+      margin-top: 1%;
+    }
+
+    .scrolls {
+      margin-top: 4%;
+    }
+
+    .menuitems {
+      line-height: 1.25em!important;
+    }
+
+    #headshot {
+      width: 9vw;
+    }
+  }
+
 @media (min-width: 992px) and (max-width: 1024px) {
   body {
     100vw;
