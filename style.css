@@ -8,6 +8,17 @@ body {
   overflow-x: hidden;
 }
 
+.desc {
+  margin-top: -9%;
+  margin-bottom: 14%;
+}
+
+.title {
+font-family: omnes;
+  font-weight: 400;
+  color: #1E4F59;
+}
+
 .left {
   /*display: flex;*/
   /*margin-left: 10%;*/
@@ -49,9 +60,9 @@ h1 {
   font-weight: normal;
   font-size: 12em;
   line-height: 0.7em;
-  /*letter-spacing: 0.03em;*/
+  letter-spacing: 0.03em;
   color: #31312f;
-  /*margin-top: unset;*/
+  margin-top: 10%;
   /*margin-right: auto;*/
   /*margin-left: auto;*/
   /*display: flex;*/
@@ -135,8 +146,8 @@ footer .jumper {
 }
 
 footer .jumper:hover {
-  border: 1px solid #33b4d0;
-  color: #33b4d0;
+  border: 1px solid #1e4f59;
+  color: #1e4f59;
 }
 
 footer {
@@ -212,7 +223,7 @@ footer {
 
 .home:hover,
 .top:hover {
-  border: 0.25px solid #5ac2d8;
+  border: 0.25px solid #1e4f59;
 }
 
 .home:active,
@@ -222,7 +233,7 @@ footer {
 }
 
 .jumper:hover {
-  border: 0.25px solid #5ac2d8;
+  border: 0.25px solid #1e4f59;
   color: #1e4f59;
 }
 
@@ -321,7 +332,6 @@ h4 {
   justify-content: flex-end;
   padding-left: 7vw;
   margin-right: auto;
-  margin-top: -5%;
   overflow: hidden;
   background: -webkit-linear-gradient(#f1f1f1, #fff);
 }
@@ -333,9 +343,10 @@ h4 {
   text-align: center;
 }
 .Iam p {
+  font-family: omnes;
   height: 50px;
   width: 100%;
-  color: #33b4d0;
+  color: #1e4f59;
   float: left;
   margin-right: 0.4em;
   text-align: center;
@@ -489,22 +500,22 @@ h4 {
 }
 
 .wheader {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 100;
-  font-size: 3em;
-  line-height: 3em;
-  letter-spacing: 0.03em;
-  text-transform: lowercase;
-  color: #1e4f59;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  margin-bottom: unset;
-  text-shadow: none;
-  background: white;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05);
-  padding: 1%;
+  font-family: omnes;
+    /* font-style: normal; */
+    font-weight: 800;
+    font-size: 4em;
+    line-height: 3em;
+    letter-spacing: 0.03em;
+    /* text-transform: lowercase; */
+    color: #1e4f59;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: unset;
+    text-shadow: none;
+    background: white;
+    /* box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05); */
+    padding: 1%;
 }
 
 .wbox {
@@ -687,6 +698,8 @@ justify-content: space-between;
   background: transparent;
   color: transparent;
   text-align: center;
+  margin-top: -10%;
+  margin-bottom: 10%;
 }
 .fast h4 {
   position: absolute;
@@ -776,11 +789,16 @@ justify-content: space-between;
   font-size: 5em !important;
   margin-top: -10%;
   text-align: center;
-  font-family: Monofett;
-  color: #31312f;
   font-family: omnes-pro;
   font-size: 0.75em;
   margin-top: 1%;
+}
+
+.sub p {
+  font-family: omnes;
+  color: #1e4f59;
+  font-weight: 600;
+  margin-top: -8%;
 }
 
 @media screen 
@@ -806,6 +824,11 @@ justify-content: space-between;
       width: 9vw;
     }
   }
+@media (min-width: 1025px) and (max-width: 1174px) {
+  .fast, .blinking {
+    display: none;
+  }
+}
 
 @media (min-width: 992px) and (max-width: 1024px) {
   body {
@@ -822,19 +845,22 @@ justify-content: space-between;
 
   .menuitems {
     line-height: 1.5em;
-    font-size: 3em;
+    font-size: 1em;
   }
 
   .fast, .blinking {
-    margin-top: 20%;
+    display: none;
   }
 
-  .sub {
-    margin-top: 20%;
+  .sub p {
+    margin-top: -10%;
+    width: 100%;
+    font-size: 1em;
+    margin-bottom: 15%;
   }
 
   .center h1 {
-    font-size: 15em!important;
+    font-size: 13em!important;
   }
 
   .wbox img {
@@ -916,7 +942,8 @@ justify-content: space-between;
 
   .sub {
     margin-top: -10%;
-    font-size: 4em !important;
+    font-size: 3em !important;
+    width: 100%;
   }
   
   .menuitems {
@@ -933,8 +960,13 @@ justify-content: space-between;
     font-size: 0.9em;
   }
 
+  .center h1 {
+    font-size: 4em;
+    margin-bottom: 1%;
+  }
+
   .scrolls {
-    display: none;
+    display: none!important;
   }
 
   .header {
@@ -949,17 +981,21 @@ justify-content: space-between;
   }
 
   .fast {
-    margin-top: 10%;
+    margin-top: -20%;
   }
 
   #headshot {
-    width: 15vw;
-    margin-right: -4%;
+    width: 6vw;
+    margin-right: .05%;
   }
 
-  .sub {
-    margin-top: -15%;
-    font-size: 3em !important;
+  .sub p {
+    margin-top: 3%;
+    font-size: .5em;
+  }
+
+  #topLeft {
+    display: none;
   }
 
   .top,
@@ -1018,6 +1054,10 @@ justify-content: space-between;
 @media (min-width: 376px) and (max-width: 480px) {
   body {
     font-size: 0.8em;
+  }
+
+  .fast, .blinking {
+    display: none;
   }
 
   h1 {
@@ -1126,6 +1166,10 @@ justify-content: space-between;
     display: flex;
     justify-content: end;
   }
+
+  .scrolls {
+    display: none;
+  }
 }
 
 @media all and (max-width: 375px) {
@@ -1199,6 +1243,10 @@ justify-content: space-between;
   .wbox {
     font-size: .5em;
     width: 90%;
+  }
+
+  .wheader {
+    font-size: 2em;
   }
 
   .wcontainer {
