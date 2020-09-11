@@ -1,7 +1,7 @@
 body {
   margin: 0;
   /*transition: background-color .5s;*/
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 100;
   background-color: white !important;
   color: #303030;
