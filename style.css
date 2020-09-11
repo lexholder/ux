@@ -14,7 +14,7 @@ body {
 }
 
 .title {
-font-family: omnes;
+font-family: 'omnes', sans-serif;
   font-weight: 400;
   color: #1E4F59;
 }
