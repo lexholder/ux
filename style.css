@@ -307,6 +307,12 @@ h4 {
   /*margin-bottom: 5%;*/
 }
 
+.flexhead {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .flex {
   display: flex;
   flex-direction: column;
@@ -942,7 +948,7 @@ justify-content: space-between;
   }
 
   .sub {
-    margin-top: -10%;
+    /* margin-top: -10%; */
     font-size: 3em !important;
     width: 100%;
   }
