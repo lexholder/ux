@@ -14,8 +14,8 @@ body {
 }
 
 .title {
-font-family: 'omnes', sans-serif;
-  font-weight: 400;
+font-family: omnes-pro, sans-serif;
+  font-weight: 500;
   color: #1E4F59;
   margin-left: -1.75%;
 }
@@ -344,7 +344,7 @@ h4 {
   text-align: center;
 }
 .Iam p {
-  font-family: omnes;
+  font-family: omnes-pro, sans-serif;
   height: 50px;
   width: 100%;
   color: #1e4f59;
@@ -501,7 +501,7 @@ h4 {
 }
 
 .wheader {
-  font-family: omnes;
+  font-family: omnes-pro, sans-serif;
     /* font-style: normal; */
     font-weight: 800;
     font-size: 4em;
@@ -583,7 +583,7 @@ justify-content: space-between;
 
 .menulist {
   text-align: center;
-  font-family: omnes-pro;
+  font-family: omnes-pro, sans-serif;
 }
 
 .line1,
@@ -611,7 +611,7 @@ justify-content: space-between;
   display: flex;
   margin-left: 2%;
   margin-top: 2%;
-  font-family: omnes-pro;
+  font-family: omnes-pro, sans-serif;
   font-size: 2em;
   opacity: 1;
 }
@@ -790,15 +790,15 @@ justify-content: space-between;
   font-size: 5em !important;
   margin-top: -10%;
   text-align: center;
-  font-family: omnes-pro;
+  font-family: omnes-pro, sans-serif;
   font-size: 0.75em;
   margin-top: 1%;
 }
 
 .sub p {
-  font-family: omnes;
+  font-family: omnes-pro, sans-serif;
   color: #1e4f59;
-  font-weight: 600;
+  font-weight: 700;
   margin-top: -8%;
 }
 
