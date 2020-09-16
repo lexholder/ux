@@ -792,6 +792,10 @@ justify-content: space-between;
   margin-right: -2.5%;
 }
 
+#eclipse {
+  width: 8vw;
+}
+
 .sub {
   font-size: 5em !important;
   margin-top: -10%;
