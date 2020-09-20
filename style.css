@@ -215,6 +215,11 @@ footer {
   text-align: center;
 }
 
+#journey img {
+  border: 5px solid transparent;
+  border-radius: 3px;
+}
+
 #journey img:hover {
   border: 5px solid #1e4f59;
   border-radius: 3px;
